@@ -1,0 +1,290 @@
+
+
+VIOSO Unity Plugin loaded
+VIOSO Unity Plugin PluginLoad
+ Loading VIOSOWarpBlend ...
+Process location: E:\Unity\2020.1.0b4\Editor\Unity.exe
+Plugin location: E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\VIOSO_Plugin64.dll
+Try VIOSOWarpBlend location: E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll
+18:43:03 Warper create issued "right" as #1
+18:43:03  D3D11 - Device found.
+
+18:43:03 -VIOSO WARP BLEND API-
+
+18:43:03 Warper create issued "left" as #2
+18:43:03  D3D11 - Device found.
+
+18:43:03 2020/07/11 VIOSOWarpBlend API 1.4.0.7332.
+
+18:43:03 E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+18:43:03 DX11-Warper "center" created. Logging level is 2
+Evaluated parameters from
+E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=Panadome3D.vwf
+calibIndex=1
+bTurnWithView=1
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=sinewave
+eye=[0.00000, 0.00000, 0.00000]
+near=0.15000
+far=1000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=1.00000;
+bAutoView=1;
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=2.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+address=0.0.0.0
+mouseMode=0
+
+18:43:03 Open "E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\Panadome3D.vwf"...
+
+18:43:03 File found and openend.
+
+18:43:03 File contains 6 chunks.
+
+18:43:03 Load warp map 0...
+
+18:43:03 Warp map successfully loaded, new dataset (1) 1600x2560 created.
+
+18:43:03 Load bitmap for dataset 1...
+
+18:43:03 Blend image set.
+
+18:43:03 Load warp map 1...
+
+18:43:03 Warp map successfully loaded, new dataset (2) 1600x2560 created.
+
+18:43:03 Load bitmap for dataset 2...
+
+18:43:03 Blend image set.
+
+18:43:03 Load warp map 2...
+
+18:43:03 Warp map successfully loaded, new dataset (3) 1600x2560 created.
+
+18:43:03 Load bitmap for dataset 3...
+
+18:43:03 Blend image set.
+
+18:43:03 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+18:43:03 3D data found in mapping. Using DYNAMIC EYE settings.
+
+18:43:03 left-handedness detected.
+
+18:43:04 INFO: AutoView mapping display corners (-699.3588,883.7701,-742.9283)-(784.5569,-883.5085,-652.7791).
+
+18:43:04 INFO: AutoView for channel [center] yields:
+dir=[-3.602284, -0.821079, -0.095174]
+fov=[46.987751, 50.528656, 48.840031, 53.264099]
+screenDist=0.709205
+optimalRes=[12879652, 1472]
+optimalRect=[0, 0, 12879652, 1472]
+handedness=left
+borderFitError=[-7.863140%, 2.183266%, -5.744926%, 0.273600%]
+
+18:43:04 INFO: Output buffer found. Viewport is 2184x1354.
+
+18:43:04 SUCCESS: DX11-Warper initialized.
+
+18:43:04 Successfully created warper #0
+
+18:43:04 -VIOSO WARP BLEND API-
+
+18:43:04 2020/07/11 VIOSOWarpBlend API 1.4.0.7332.
+
+18:43:04 E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+18:43:04 DX11-Warper "right" created. Logging level is 2
+Evaluated parameters from
+E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=Panadome3D.vwf
+calibIndex=2
+bTurnWithView=1
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=sinewave
+eye=[0.00000, 0.00000, 0.00000]
+near=0.15000
+far=1000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=1.00000;
+bAutoView=1;
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=2.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+address=0.0.0.0
+mouseMode=0
+
+18:43:04 Open "E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\Panadome3D.vwf"...
+
+18:43:04 File found and openend.
+
+18:43:04 File contains 6 chunks.
+
+18:43:04 Load warp map 0...
+
+18:43:04 Warp map successfully loaded, new dataset (1) 1600x2560 created.
+
+18:43:04 Load bitmap for dataset 1...
+
+18:43:04 Blend image set.
+
+18:43:04 Load warp map 1...
+
+18:43:04 Warp map successfully loaded, new dataset (2) 1600x2560 created.
+
+18:43:04 Load bitmap for dataset 2...
+
+18:43:04 Blend image set.
+
+18:43:04 Load warp map 2...
+
+18:43:04 Warp map successfully loaded, new dataset (3) 1600x2560 created.
+
+18:43:04 Load bitmap for dataset 3...
+
+18:43:04 Blend image set.
+
+18:43:04 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+18:43:04 3D data found in mapping. Using DYNAMIC EYE settings.
+
+18:43:04 left-handedness detected.
+
+18:43:04 INFO: AutoView mapping display corners (325.7965,884.8607,-965.9467)-(1021.6858,-882.2506,-2.9690).
+
+18:43:04 INFO: AutoView for channel [right] yields:
+dir=[-1.019566, 51.790062, 1.238202]
+fov=[41.749104, 48.167118, 39.849857, 49.521282]
+screenDist=0.802353
+optimalRes=[943792, 478]
+optimalRect=[0, 0, 943792, 478]
+handedness=left
+borderFitError=[-0.713251%, 3.931336%, -19.435661%, 2.964941%]
+
+18:43:04 INFO: Output buffer found. Viewport is 2184x1354.
+
+18:43:04 SUCCESS: DX11-Warper initialized.
+
+18:43:04 Successfully created warper #1
+
+18:43:04 -VIOSO WARP BLEND API-
+
+18:43:04 2020/07/11 VIOSOWarpBlend API 1.4.0.7332.
+
+18:43:04 E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+18:43:04 DX11-Warper "left" created. Logging level is 2
+Evaluated parameters from
+E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=Panadome3D.vwf
+calibIndex=0
+bTurnWithView=1
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=sinewave
+eye=[0.00000, 0.00000, 0.00000]
+near=0.15000
+far=1000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=1.00000;
+bAutoView=1;
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=2.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+address=0.0.0.0
+mouseMode=0
+
+18:43:04 Open "E:\Projects (Unity)\sandbox\Assets\Plugins\vioso\Panadome3D.vwf"...
+
+18:43:04 File found and openend.
+
+18:43:04 File contains 6 chunks.
+
+18:43:04 Load warp map 0...
+
+18:43:04 Warp map successfully loaded, new dataset (1) 1600x2560 created.
+
+18:43:04 Load bitmap for dataset 1...
+
+18:43:04 Blend image set.
+
+18:43:04 Load warp map 1...
+
+18:43:04 Warp map successfully loaded, new dataset (2) 1600x2560 created.
+
+18:43:04 Load bitmap for dataset 2...
+
+18:43:04 Blend image set.
+
+18:43:04 Load warp map 2...
+
+18:43:05 Warp map successfully loaded, new dataset (3) 1600x2560 created.
+
+18:43:05 Load bitmap for dataset 3...
+
+18:43:05 Blend image set.
+
+18:43:05 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+18:43:05 3D data found in mapping. Using DYNAMIC EYE settings.
+
+18:43:05 left-handedness detected.
+
+18:43:05 INFO: AutoView mapping display corners (-1019.5349,884.8517,-1.1517)-(-152.0290,-885.2803,-1007.6599).
+
+18:43:05 INFO: AutoView for channel [left] yields:
+dir=[-1.322037, -52.165524, -1.697280]
+fov=[39.625378, 48.224655, 42.604290, 50.055431]
+screenDist=0.804236
+optimalRes=[2516, 393]
+optimalRect=[0, 0, 2516, 393]
+handedness=left
+borderFitError=[-16.741963%, 5.193775%, -1.612895%, 4.185097%]
+
+18:43:05 INFO: Output buffer found. Viewport is 2184x1354.
+
+18:43:05 SUCCESS: DX11-Warper initialized.
+
+18:43:05 Successfully created warper #2
+
+18:43:05 Input texture resource attached.
+18:43:14 INFO: DX11-Warper destroyed.
+
+18:43:14 Warper destroyed.
+18:43:14 INFO: DX11-Warper destroyed.
+
+18:43:14 Warper destroyed.
+18:43:14 INFO: DX11-Warper destroyed.
+
+18:43:14 Warper destroyed.
+18:43:14 Unloading VIOSOWarpBlend
+
+VIOSO Unity Plugin kUnityGfxDeviceEventShutdown
+VIOSO Unity Plugin kUnityGfxDeviceEventShutdown
+VIOSO Unity Plugin to unload
