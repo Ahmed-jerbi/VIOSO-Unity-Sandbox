@@ -19,6 +19,6 @@ It is designed based on the VIOSO showroom in Düsseldorf (Germany) using Pro Bu
 ## Tutorial & Documentation
 
 - Watch a detailed guide on the integration in this <a href="https://youtu.be/CA9n_h80oxk" target="_blank">`Tutorial Video`</a>
-- Documentation and manual availble in <a href="https://helpdesk.vioso.com/documentation/supported-applications/integrate-unity/" target="_blank">`the helpdesk`</a>
+- Documentation and manual availble in <a href="https://helpdesk.vioso.com/documentation/integrate-3d-engines/unity/" target="_blank">`the helpdesk`</a>
 
 ---
