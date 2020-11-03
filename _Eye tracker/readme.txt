@@ -22,6 +22,6 @@ For x86 software using VIOSOWarpBlend.dll and listen to UDP port 999:
 EyePointProvider=EyePointProvider.dll
 EyePointProviderParam=listen 999
 
-For a simple test, you can specify:
+For a simple test, ini "VIOSOwarpblend.ini" you can specify:
 EyePointProviderParam=sinewave
 This will undulate all axis and angles in a loop.
