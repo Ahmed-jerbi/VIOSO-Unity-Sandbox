@@ -12,7 +12,7 @@ It is designed based on the VIOSO showroom in Düsseldorf (Germany) using Pro Bu
 - Clone or download the repository.
 - Download the mapping file (.VWF) of the Panadome <a href="https://vioso-my.sharepoint.com/:u:/p/jerbi_ahmed/EQ7_WsvvhUNHn-RLiYtCk-8BfYnhjK_5IKEx80y2LPCsKA?e=5hxZK4" target="_blank">here</a>.
 - Place the mapping file in `Assets/Plugins/vioso` 
-- Start the project in Unity and launch play mode: You will see 1x unwarped display in output 1 and 3x warped and blended outputs in 2,3,4 as shown below:
+- Start the project in Unity and launch play mode: You will see 1x unwarped output in Display 1 and 3x warped and blended outputs in Displays 2,3,4 as shown below:
 
 ![](https://github.com/Ahmed-jerbi/VIOSO-Unity-Sandbox/blob/master/Assets/Pictures/output.JPG)
 
