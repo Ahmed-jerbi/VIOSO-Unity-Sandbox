@@ -3,7 +3,7 @@
 This is an eyepoint provider .dll and an eye-tracker simulator.
 You can enable dynamic eye point for every software using VIOSO warper implementing getViewClip or getViewProj and serve it with a 3D .vwf.
 See VIOSOWarpBlend documentation.
-Your program will now listen to a specified port on UDP protocoll. A package has a simple format. It is a space ('\x20') separated list of floating point numbers, rotation in euler-angles and degree:
+Your program will now listen to a specified port on UDP protocoll. A package has a simple format. It is a space ('\x20') separated list of floating point numbers, position in millimeters and rotation in euler-angles (degree):
 x-position y-position z-position x-rotation y-rotation z-rotation
 i.e.
 1.72541 0.01200 0.00000 0.00000 11.0448 0.00000
