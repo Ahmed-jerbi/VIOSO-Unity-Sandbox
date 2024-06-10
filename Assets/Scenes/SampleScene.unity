@@ -576,7 +576,6 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 0.5372549}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1381,6 +1380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691280d913fa63a48bdaf91aee0a18fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staticEyepoint: 0
+  customIniPath: 
 --- !u!20 &370483473
 Camera:
   m_ObjectHideFlags: 0
@@ -1415,7 +1416,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 3
+  m_TargetDisplay: 2
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -1608,6 +1609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691280d913fa63a48bdaf91aee0a18fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staticEyepoint: 0
+  customIniPath: 
 --- !u!20 &397778283
 Camera:
   m_ObjectHideFlags: 0
@@ -1642,7 +1645,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 4
+  m_TargetDisplay: 3
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -11169,6 +11172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691280d913fa63a48bdaf91aee0a18fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staticEyepoint: 0
+  customIniPath: 
 --- !u!20 &1528726576
 Camera:
   m_ObjectHideFlags: 0
@@ -11203,7 +11208,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 2
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -11981,7 +11986,6 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

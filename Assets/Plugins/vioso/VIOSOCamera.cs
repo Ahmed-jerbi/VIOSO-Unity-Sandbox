@@ -8,8 +8,29 @@ using UnityEngine.Rendering;
 using UnityEngine.EventSystems;
 using System.Runtime.InteropServices;
 
+[HelpURL("https://helpdesk.vioso.com/documentation/integrate-3d-engines/unity/")]
+
 public class VIOSOCamera : MonoBehaviour
 {
+
+    #region Inspector Attributes
+    [Header("Custom Parameters ")]
+
+    [Tooltip("Disables the frame by frame view calculations.")]
+    public bool staticEyepoint = false;
+
+    [Tooltip("VIOSOWarpBlend.ini configuration file path. Defaults to the plugin (.dll) directory")]
+    public string customIniPath = ""; // example =@"D:\Calibration\VIOSOWarpBlend.ini"
+    #endregion
+
+    #region VIOSO variables
+    private Camera cam;
+    private int viosoID = -1;
+    private int b3D = 1;
+    private bool bDynamic = true;
+    private Quaternion orig_rot = Quaternion.identity;
+    private Vector3 orig_pos = Vector3.zero;
+    private Dictionary<RenderTexture, IntPtr> texMap = new Dictionary<RenderTexture, IntPtr>();
 
     public enum ERROR
     {
@@ -27,11 +48,16 @@ public class VIOSOCamera : MonoBehaviour
         FALSE = -16,        /// No error, but nothing has been done
     };
 
-    //private const string dllLoc = "GfxPlugin_VIOSO64";// @"D:\Unity\1st\Assets\Plugins\GfxPlugin_VIOSO64.dll";
+    ERROR globalError = ERROR.FALSE;
+
+    #endregion
+
+    #region DLL imports
+
     [DllImport("VIOSO_Plugin64")]
     private static extern IntPtr GetRenderEventFunc();
     [DllImport("VIOSO_Plugin64")]
-    private static extern ERROR Init(ref int id, string name );
+    private static extern ERROR Init(ref int id, string name, string pathToIni); 
     [DllImport("VIOSO_Plugin64")]
     private static extern ERROR UpdateTex(int id, IntPtr texHandleSrc, IntPtr texHandleDest );
     [DllImport("VIOSO_Plugin64")]
@@ -44,38 +70,9 @@ public class VIOSOCamera : MonoBehaviour
     private static extern ERROR GetViewClip(int id, ref Vector3 pos, ref Vector3 rot, ref Matrix4x4 view, ref FrustumPlanes clip);
     [DllImport("VIOSO_Plugin64")]
     private static extern void SetTimeFromUnity(float t);
-
-    private Camera cam;
-    private int viosoID = -1;
-    private Quaternion orig_rot = Quaternion.identity;
-    private Vector3 orig_pos = Vector3.zero;
-    private Dictionary<RenderTexture, IntPtr> texMap = new Dictionary<RenderTexture, IntPtr>();
-
-    public static void ScreenShot(string path)
-    {
-        Texture2D tex;
-        int w;
-        int h;
-        TextureFormat fmt;
-        if (null != RenderTexture.active)
-        {
-            w = RenderTexture.active.width;
-            h = RenderTexture.active.height;
-            fmt = TextureFormat.RGB24;
-        }
-        else
-        {
-            w = Screen.width;
-            h = Screen.height;
-            fmt = TextureFormat.RGB24;
-        }
-        tex = new Texture2D(w, h, fmt, false);
-
-        tex.ReadPixels(new Rect(0, 0, w, h), 0, 0);
-
-        byte[] io = tex.EncodeToPNG();
-        System.IO.File.WriteAllBytes(path, io);
-    }
+    [DllImport("VIOSO_Plugin64")]
+    private static extern ERROR Is3D(int id, ref int b3D);
+    #endregion
 
 
     private void Start()
@@ -85,63 +82,80 @@ public class VIOSOCamera : MonoBehaviour
         orig_rot = cam.transform.localRotation;
         orig_pos = cam.transform.localPosition;
 
-        ERROR err = ERROR.FALSE;
-        err = Init(ref viosoID, cam.name );
-        if (ERROR.NONE == err)
+
+        globalError = Init(ref viosoID, cam.name,customIniPath);
+        if (globalError == ERROR.NONE)
         {
             GL.IssuePluginEvent(GetRenderEventFunc(), viosoID); // this will initialize warper in Unity Graphic Library context
             int err1 = 0;
             GetError(viosoID, ref err1);
-            err = (ERROR)err1;
-            if (ERROR.NONE != err)
+            ERROR err2;
+            err2 = (ERROR)err1;
+            if (err2==ERROR.NONE)
             {
-                Debug.Log("Initialization of warper failed.");
+                Debug.Log(string.Format("Initialization of VIOSO camera: {0}.", cam.name));
             }
+            else
+            {
+                Debug.Log(string.Format("ERROR: VIOSO warper failed to initialize with error: {0}.", globalError));
+            }
+
         }
         else
         {
-            Debug.Log(string.Format("Initialization attempt of warper failed with eror %i.", err ) );
+            Debug.Log(string.Format("ERROR: VIOSO plugin failed to initialize with error type: {0}. \n Check the (.log) file for more details", globalError) );
         }
 
-        if (ERROR.NONE != err)
-        {
-            Debug.Log("Failed to init camera.");
-        }
     }
 
-    private void OnDisable()
-    {
-        if (-1 != viosoID)
-        {
-            ERROR err = Destroy(viosoID);
-            viosoID = -1;
-        }
-    }
-
+    /// <summary>
+    /// Calls the VIOSO dynamic view calculation before culling each frame
+    /// </summary>
     private void OnPreCull()
     {
-        if (-1 != viosoID)
+        if (-1 != viosoID && bDynamic && ERROR.NONE == globalError) 
         {
-            Vector3 pos = new Vector3(0, 0, 0);
-            Vector3 rot = new Vector3(0, 0, 0);
-            Matrix4x4 mV = Matrix4x4.identity;
-
-            Matrix4x4 mP = new Matrix4x4();
-            FrustumPlanes pl = new FrustumPlanes();
-            if (ERROR.NONE == GetViewClip(viosoID, ref pos, ref rot, ref mV, ref pl))
+            ERROR err = Is3D(viosoID, ref b3D);
+            if ( 1 == b3D && ERROR.NONE == err)
             {
-                mV = mV.transpose;
-                Quaternion q = mV.rotation;
-                Vector3 p = mV.GetColumn(3);
-                cam.transform.localRotation = orig_rot * q;
-                cam.transform.localPosition = orig_pos + p;
-
-                mP = Matrix4x4.Frustum(pl);
-                cam.projectionMatrix = mP;
+                SetViosoViews();
             }
+
+            if (staticEyepoint) { bDynamic=false; } //run the setViosoViews only once in static mode.
         }
     }
 
+
+    /// <summary>
+    /// VIOSO dynamic view calculation
+    /// </summary>
+    private void SetViosoViews()
+    {
+        // Tracker data for dynamic eyepoint. Defaults to origin defined in VIOSOWarpBlend.ini "Eye" & "Base" params.
+        Vector3 trackerPos = new Vector3(0, 0, 0);
+        Vector3 trackerRot = new Vector3(0, 0, 0);
+
+        Matrix4x4 mV = Matrix4x4.identity;
+
+        Matrix4x4 mP = new Matrix4x4();
+        FrustumPlanes pl = new FrustumPlanes();
+        if (ERROR.NONE == GetViewClip(viosoID, ref trackerPos, ref trackerRot, ref mV, ref pl))
+        {
+            mV = mV.transpose;
+            Quaternion q = mV.rotation;
+            Vector3 p = mV.GetColumn(3);
+            cam.transform.localRotation = orig_rot * q;
+            cam.transform.localPosition = orig_pos + p;
+
+            mP = Matrix4x4.Frustum(pl);
+            cam.projectionMatrix = mP;
+        }
+    }
+
+
+    /// <summary>
+    /// VIOSO shader call.
+    /// </summary>
     private void OnRenderImage( RenderTexture source, RenderTexture destination )
     {
         RenderTexture.active = destination;
@@ -159,4 +173,12 @@ public class VIOSOCamera : MonoBehaviour
         }
     }
 
- }
+    private void OnDisable()
+    {
+        if (-1 != viosoID)
+        {
+            ERROR err = Destroy(viosoID);
+            viosoID = -1;
+        }
+    }
+}
