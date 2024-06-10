@@ -347,3 +347,1379 @@ borderFitError=[233px, 71px, 137px, 71px]
 15:11:11 Warper 574580224 destroyed.
 15:11:11 Unloading VIOSOWarpBlend
 
+
+ Loading VIOSOWarpBlend ...
+Process location: D:\Unity\2020.1.0b4\Editor\Unity.exe
+Plugin location: D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSO_Plugin64.dll
+Try VIOSOWarpBlend location: D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll
+15:31:55 --- BEGIN SESSION --- BEGIN SESSION --- BEGIN SESSION --- BEGIN SESSION ---
+
+15:31:55 Creating Warper "right"
+15:31:55 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:31:55 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:31:55 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:31:55 DX11-Warper "center" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=1
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:31:55  D3D11 - Device found.
+
+15:31:55 Warper "right" got ID #1
+15:31:55 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:31:55 File found and openend.
+
+15:31:55 File contains 6 chunks.
+
+15:31:55 
+Ini path:
+15:31:55  D3D11 - Device found.
+
+15:31:55 Warper "left" got ID #2
+15:31:55 Warp map successfully added, new dataset (1) 1600x2560 created, data loading skipped.
+
+15:31:55 Load bitmap for dataset 1...
+
+15:31:55 Load warp map 1...
+
+15:31:55 Warp map successfully loaded, new dataset (2) 1600x2560 created.
+
+15:31:55 Load bitmap for dataset 2...
+
+15:31:56 Blend image set.
+
+15:31:56 Load warp map 2...
+
+15:31:56 Warp map successfully added, new dataset (3) 1600x2560 created, data loading skipped.
+
+15:31:56 Load bitmap for dataset 3...
+
+15:31:56 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:31:56 Mapping Info:
+    Hostname: ""
+  Devicename: "D6 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 3520,0
+
+15:31:56 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:31:56 left-handedness detected.
+
+15:31:56 INFO: AutoView mapping display corners:
+ tl(-699.3588,883.7701,-742.9283)
+ tr(645.9905,884.3150,-789.1859)
+ bl(-778.8524,-885.1764,-657.4368)
+ br(784.5569,-883.5085,-652.7791).
+
+15:31:56 INFO: AutoView average resolution is 2076x2227.
+15:31:56 INFO: AutoView optimal resolution coverage is 68%x68%.
+15:31:56 INFO: AutoView for channel [center] yields:
+dir=[-3.603276, -0.816620, 0.043669]
+fov=[53.741737, 55.363392, 54.169922, 53.684025]
+screen=0.709285
+optimalRes=[3200, 5120]
+optimalRect=[0, 0, 3200, 5120]
+handedness=left
+borderFitError=[171px, 101px, 142px, 136px]
+
+15:31:56 INFO: Output buffer found. Viewport is 878x676.
+
+15:31:56 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:31:56 SUCCESS: DX11-Warper initialized.
+
+15:31:56 Successfully created warper #0
+
+15:31:56 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:31:56 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:31:56 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:31:56 DX11-Warper "right" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=2
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:31:56 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:31:56 File found and openend.
+
+15:31:56 File contains 6 chunks.
+
+15:31:56 Load warp map 0...
+
+15:31:56 Warp map successfully added, new dataset (1) 1600x2560 created, data loading skipped.
+
+15:31:56 Load bitmap for dataset 1...
+
+15:31:56 Load warp map 1...
+
+15:31:56 Warp map successfully added, new dataset (2) 1600x2560 created, data loading skipped.
+
+15:31:56 Load bitmap for dataset 2...
+
+15:31:56 Load warp map 2...
+
+15:31:56 Warp map successfully loaded, new dataset (3) 1600x2560 created.
+
+15:31:56 Load bitmap for dataset 3...
+
+15:31:56 Blend image set.
+
+15:31:56 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:31:56 Mapping Info:
+    Hostname: ""
+  Devicename: "D7 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 5120,0
+
+15:31:56 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:31:56 left-handedness detected.
+
+15:31:56 INFO: AutoView mapping display corners:
+ tl(325.7965,884.8607,-965.9467)
+ tr(1020.4581,883.7508,-1.1815)
+ bl(165.6831,-884.8851,-1005.8342)
+ br(1021.6858,-882.2506,-2.9690).
+
+15:31:56 INFO: AutoView average resolution is 1859x2226.
+15:31:56 INFO: AutoView optimal resolution coverage is 71%x71%.
+15:31:56 INFO: AutoView for channel [right] yields:
+dir=[-1.603805, 51.759789, 0.034882]
+fov=[47.390091, 50.621052, 49.294228, 49.711651]
+screen=0.802922
+optimalRes=[3199, 5120]
+optimalRect=[0, 0, 3199, 5120]
+handedness=left
+borderFitError=[143px, 56px, 248px, 73px]
+
+15:31:56 INFO: Output buffer found. Viewport is 878x676.
+
+15:31:56 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:31:56 SUCCESS: DX11-Warper initialized.
+
+15:31:56 Successfully created warper #1
+
+15:31:56 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:31:56 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:31:56 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:31:56 DX11-Warper "left" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=0
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:31:56 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:31:56 File found and openend.
+
+15:31:56 File contains 6 chunks.
+
+15:31:56 Load warp map 0...
+
+15:31:56 Warp map successfully loaded, new dataset (1) 1600x2560 created.
+
+15:31:56 Load bitmap for dataset 1...
+
+15:31:57 Blend image set.
+
+15:31:57 Load warp map 1...
+
+15:31:57 Warp map successfully added, new dataset (2) 1600x2560 created, data loading skipped.
+
+15:31:57 Load bitmap for dataset 2...
+
+15:31:57 Load warp map 2...
+
+15:31:57 Warp map successfully added, new dataset (3) 1600x2560 created, data loading skipped.
+
+15:31:57 Load bitmap for dataset 3...
+
+15:31:57 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:31:57 Mapping Info:
+    Hostname: ""
+  Devicename: "D5 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 1920,0
+
+15:31:57 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:31:57 left-handedness detected.
+
+15:31:57 INFO: AutoView mapping display corners:
+ tl(-1019.5349,884.8517,-1.1517)
+ tr(-365.5870,885.0822,-951.3798)
+ bl(-1019.4171,-884.9565,-2.8556)
+ br(-152.0290,-885.2803,-1007.6599).
+
+15:31:57 INFO: AutoView average resolution is 1874x2299.
+15:31:57 INFO: AutoView optimal resolution coverage is 73%x73%.
+15:31:57 INFO: AutoView for channel [left] yields:
+dir=[-2.151917, -52.111313, -0.002159]
+fov=[48.698147, 51.411037, 47.773930, 49.682686]
+screen=0.805240
+optimalRes=[3199, 5120]
+optimalRect=[0, 0, 3199, 5120]
+handedness=left
+borderFitError=[233px, 71px, 137px, 71px]
+
+15:31:57 INFO: Output buffer found. Viewport is 878x676.
+
+15:31:57 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:31:57 SUCCESS: DX11-Warper initialized.
+
+15:31:57 Successfully created warper #2
+
+15:31:57 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:31:57 Input texture resource attached.
+15:32:19 INFO: DX11-Warper destroyed.
+
+15:32:19 Warper 574580032 destroyed.
+15:32:19 INFO: DX11-Warper destroyed.
+
+15:32:19 Warper 574580032 destroyed.
+15:32:19 INFO: DX11-Warper destroyed.
+
+15:32:19 Warper 574580032 destroyed.
+15:32:19 Unloading VIOSOWarpBlend
+
+
+ Loading VIOSOWarpBlend ...
+Process location: D:\Unity\2020.1.0b4\Editor\Unity.exe
+Plugin location: D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSO_Plugin64.dll
+Try VIOSOWarpBlend location: D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll
+15:32:28 --- BEGIN SESSION --- BEGIN SESSION --- BEGIN SESSION --- BEGIN SESSION ---
+
+15:32:28 Creating Warper "right"
+15:32:28 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:32:28 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:32:28 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:32:28 DX11-Warper "center" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=1
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:32:28  D3D11 - Device found.
+
+15:32:28 Warper "right" got ID #1
+15:32:28 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:32:28 File found and openend.
+
+15:32:28 File contains 6 chunks.
+
+15:32:28 Load warp map 0...
+
+15:32:28 Warp map successfully added, new dataset (1) 1600x2560 created, data loading skipped.
+
+15:32:28 Load bitmap for dataset 1...
+
+15:32:28  D3D11 - Device found.
+
+15:32:28 Load warp map 1...
+
+15:32:28 Warper "left" got ID #2
+15:32:28 Warp map successfully loaded, new dataset (2) 1600x2560 created.
+
+15:32:28 Load bitmap for dataset 2...
+
+15:32:28 Blend image set.
+
+15:32:28 Load warp map 2...
+
+15:32:28 Warp map successfully added, new dataset (3) 1600x2560 created, data loading skipped.
+
+15:32:28 Load bitmap for dataset 3...
+
+15:32:28 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:32:28 Mapping Info:
+    Hostname: ""
+  Devicename: "D6 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 3520,0
+
+15:32:28 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:32:28 left-handedness detected.
+
+15:32:28 INFO: AutoView mapping display corners:
+ tl(-699.3588,883.7701,-742.9283)
+ tr(645.9905,884.3150,-789.1859)
+ bl(-778.8524,-885.1764,-657.4368)
+ br(784.5569,-883.5085,-652.7791).
+
+15:32:28 INFO: AutoView average resolution is 2076x2227.
+15:32:28 INFO: AutoView optimal resolution coverage is 68%x68%.
+15:32:28 INFO: AutoView for channel [center] yields:
+dir=[-3.603276, -0.816620, 0.043669]
+fov=[53.741737, 55.363392, 54.169922, 53.684025]
+screen=0.709285
+optimalRes=[3200, 5120]
+optimalRect=[0, 0, 3200, 5120]
+handedness=left
+borderFitError=[171px, 101px, 142px, 136px]
+
+15:32:28 INFO: Output buffer found. Viewport is 878x676.
+
+15:32:28 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:32:28 SUCCESS: DX11-Warper initialized.
+
+15:32:28 Successfully created warper #0
+
+15:32:28 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:32:28 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:32:28 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:32:28 DX11-Warper "right" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=2
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:32:28 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:32:28 File found and openend.
+
+15:32:28 File contains 6 chunks.
+
+15:32:28 Load warp map 0...
+
+15:32:28 Warp map successfully added, new dataset (1) 1600x2560 created, data loading skipped.
+
+15:32:28 Load bitmap for dataset 1...
+
+15:32:28 Load warp map 1...
+
+15:32:28 Warp map successfully added, new dataset (2) 1600x2560 created, data loading skipped.
+
+15:32:28 Load bitmap for dataset 2...
+
+15:32:28 Load warp map 2...
+
+15:32:28 Warp map successfully loaded, new dataset (3) 1600x2560 created.
+
+15:32:28 Load bitmap for dataset 3...
+
+15:32:28 Blend image set.
+
+15:32:28 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:32:28 Mapping Info:
+    Hostname: ""
+  Devicename: "D7 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 5120,0
+
+15:32:29 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:32:29 left-handedness detected.
+
+15:32:29 INFO: AutoView mapping display corners:
+ tl(325.7965,884.8607,-965.9467)
+ tr(1020.4581,883.7508,-1.1815)
+ bl(165.6831,-884.8851,-1005.8342)
+ br(1021.6858,-882.2506,-2.9690).
+
+15:32:29 INFO: AutoView average resolution is 1859x2226.
+15:32:29 INFO: AutoView optimal resolution coverage is 71%x71%.
+15:32:29 INFO: AutoView for channel [right] yields:
+dir=[-1.603805, 51.759789, 0.034882]
+fov=[47.390091, 50.621052, 49.294228, 49.711651]
+screen=0.802922
+optimalRes=[3199, 5120]
+optimalRect=[0, 0, 3199, 5120]
+handedness=left
+borderFitError=[143px, 56px, 248px, 73px]
+
+15:32:29 INFO: Output buffer found. Viewport is 878x676.
+
+15:32:29 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:32:29 SUCCESS: DX11-Warper initialized.
+
+15:32:29 Successfully created warper #1
+
+15:32:29 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:32:29 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:32:29 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:32:29 DX11-Warper "left" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=0
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:32:29 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:32:29 File found and openend.
+
+15:32:29 File contains 6 chunks.
+
+15:32:29 Load warp map 0...
+
+15:32:29 Warp map successfully loaded, new dataset (1) 1600x2560 created.
+
+15:32:29 Load bitmap for dataset 1...
+
+15:32:29 Blend image set.
+
+15:32:29 Load warp map 1...
+
+15:32:29 Warp map successfully added, new dataset (2) 1600x2560 created, data loading skipped.
+
+15:32:29 Load bitmap for dataset 2...
+
+15:32:29 Load warp map 2...
+
+15:32:29 Warp map successfully added, new dataset (3) 1600x2560 created, data loading skipped.
+
+15:32:29 Load bitmap for dataset 3...
+
+15:32:29 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:32:29 Mapping Info:
+    Hostname: ""
+  Devicename: "D5 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 1920,0
+
+15:32:29 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:32:29 left-handedness detected.
+
+15:32:29 INFO: AutoView mapping display corners:
+ tl(-1019.5349,884.8517,-1.1517)
+ tr(-365.5870,885.0822,-951.3798)
+ bl(-1019.4171,-884.9565,-2.8556)
+ br(-152.0290,-885.2803,-1007.6599).
+
+15:32:29 INFO: AutoView average resolution is 1874x2299.
+15:32:29 INFO: AutoView optimal resolution coverage is 73%x73%.
+15:32:29 INFO: AutoView for channel [left] yields:
+dir=[-2.151917, -52.111313, -0.002159]
+fov=[48.698147, 51.411037, 47.773930, 49.682686]
+screen=0.805240
+optimalRes=[3199, 5120]
+optimalRect=[0, 0, 3199, 5120]
+handedness=left
+borderFitError=[233px, 71px, 137px, 71px]
+
+15:32:29 INFO: Output buffer found. Viewport is 878x676.
+
+15:32:29 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:32:29 SUCCESS: DX11-Warper initialized.
+
+15:32:29 Successfully created warper #2
+
+15:32:29 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:32:29 Input texture resource attached.
+15:32:37 INFO: DX11-Warper destroyed.
+
+15:32:37 Warper 2 destroyed.
+15:32:37 INFO: DX11-Warper destroyed.
+
+15:32:37 Warper 574580032 destroyed.
+15:32:37 INFO: DX11-Warper destroyed.
+
+15:32:37 Warper 574580032 destroyed.
+15:32:37 Unloading VIOSOWarpBlend
+
+
+ Loading VIOSOWarpBlend ...
+Process location: D:\Unity\2020.1.0b4\Editor\Unity.exe
+Plugin location: D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSO_Plugin64.dll
+Try VIOSOWarpBlend location: D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll
+15:33:11 --- BEGIN SESSION --- BEGIN SESSION --- BEGIN SESSION --- BEGIN SESSION ---
+
+15:33:11 Creating Warper "right"
+15:33:11 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:33:11 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:33:11 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:33:11  D3D11 - Device found.
+
+15:33:11 DX11-Warper "center" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=1
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:33:11 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:33:11 File found and openend.
+
+15:33:11 File contains 6 chunks.
+
+15:33:11 Creating Warper "left"
+15:33:11 
+Ini path:
+15:33:11  D3D11 - Device found.
+
+15:33:11 Warper "left" got ID #2
+15:33:11 Warp map successfully added, new dataset (1) 1600x2560 created, data loading skipped.
+
+15:33:11 Load bitmap for dataset 1...
+
+15:33:11 Load warp map 1...
+
+15:33:11 Warp map successfully loaded, new dataset (2) 1600x2560 created.
+
+15:33:11 Load bitmap for dataset 2...
+
+15:33:11 Blend image set.
+
+15:33:11 Load warp map 2...
+
+15:33:11 Warp map successfully added, new dataset (3) 1600x2560 created, data loading skipped.
+
+15:33:11 Load bitmap for dataset 3...
+
+15:33:11 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:33:11 Mapping Info:
+    Hostname: ""
+  Devicename: "D6 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 3520,0
+
+15:33:11 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:33:11 left-handedness detected.
+
+15:33:11 INFO: AutoView mapping display corners:
+ tl(-699.3588,883.7701,-742.9283)
+ tr(645.9905,884.3150,-789.1859)
+ bl(-778.8524,-885.1764,-657.4368)
+ br(784.5569,-883.5085,-652.7791).
+
+15:33:11 INFO: AutoView average resolution is 2076x2227.
+15:33:11 INFO: AutoView optimal resolution coverage is 68%x68%.
+15:33:11 INFO: AutoView for channel [center] yields:
+dir=[-3.603276, -0.816620, 0.043669]
+fov=[53.741737, 55.363392, 54.169922, 53.684025]
+screen=0.709285
+optimalRes=[3200, 5120]
+optimalRect=[0, 0, 3200, 5120]
+handedness=left
+borderFitError=[171px, 101px, 142px, 136px]
+
+15:33:11 INFO: Output buffer found. Viewport is 878x676.
+
+15:33:11 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:33:12 SUCCESS: DX11-Warper initialized.
+
+15:33:12 Successfully created warper #0
+
+15:33:12 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:33:12 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:33:12 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:33:12 DX11-Warper "right" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=2
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:33:12 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:33:12 File found and openend.
+
+15:33:12 File contains 6 chunks.
+
+15:33:12 Load warp map 0...
+
+15:33:12 Warp map successfully added, new dataset (1) 1600x2560 created, data loading skipped.
+
+15:33:12 Load bitmap for dataset 1...
+
+15:33:12 Load warp map 1...
+
+15:33:12 Warp map successfully added, new dataset (2) 1600x2560 created, data loading skipped.
+
+15:33:12 Load bitmap for dataset 2...
+
+15:33:12 Load warp map 2...
+
+15:33:12 Warp map successfully loaded, new dataset (3) 1600x2560 created.
+
+15:33:12 Load bitmap for dataset 3...
+
+15:33:12 Blend image set.
+
+15:33:12 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:33:12 Mapping Info:
+    Hostname: ""
+  Devicename: "D7 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 5120,0
+
+15:33:12 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:33:12 left-handedness detected.
+
+15:33:12 INFO: AutoView mapping display corners:
+ tl(325.7965,884.8607,-965.9467)
+ tr(1020.4581,883.7508,-1.1815)
+ bl(165.6831,-884.8851,-1005.8342)
+ br(1021.6858,-882.2506,-2.9690).
+
+15:33:12 INFO: AutoView average resolution is 1859x2226.
+15:33:12 INFO: AutoView optimal resolution coverage is 71%x71%.
+15:33:12 INFO: AutoView for channel [right] yields:
+dir=[-1.603805, 51.759789, 0.034882]
+fov=[47.390091, 50.621052, 49.294228, 49.711651]
+screen=0.802922
+optimalRes=[3199, 5120]
+optimalRect=[0, 0, 3199, 5120]
+handedness=left
+borderFitError=[143px, 56px, 248px, 73px]
+
+15:33:12 INFO: Output buffer found. Viewport is 878x676.
+
+15:33:12 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:33:12 SUCCESS: DX11-Warper initialized.
+
+15:33:12 Successfully created warper #1
+
+15:33:12 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:33:12 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:33:12 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:33:12 DX11-Warper "left" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=0
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:33:12 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:33:12 File found and openend.
+
+15:33:12 File contains 6 chunks.
+
+15:33:12 Load warp map 0...
+
+15:33:12 Warp map successfully loaded, new dataset (1) 1600x2560 created.
+
+15:33:12 Load bitmap for dataset 1...
+
+15:33:12 Blend image set.
+
+15:33:12 Load warp map 1...
+
+15:33:12 Warp map successfully added, new dataset (2) 1600x2560 created, data loading skipped.
+
+15:33:12 Load bitmap for dataset 2...
+
+15:33:12 Load warp map 2...
+
+15:33:12 Warp map successfully added, new dataset (3) 1600x2560 created, data loading skipped.
+
+15:33:12 Load bitmap for dataset 3...
+
+15:33:12 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:33:12 Mapping Info:
+    Hostname: ""
+  Devicename: "D5 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 1920,0
+
+15:33:12 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:33:12 left-handedness detected.
+
+15:33:12 INFO: AutoView mapping display corners:
+ tl(-1019.5349,884.8517,-1.1517)
+ tr(-365.5870,885.0822,-951.3798)
+ bl(-1019.4171,-884.9565,-2.8556)
+ br(-152.0290,-885.2803,-1007.6599).
+
+15:33:12 INFO: AutoView average resolution is 1874x2299.
+15:33:12 INFO: AutoView optimal resolution coverage is 73%x73%.
+15:33:12 INFO: AutoView for channel [left] yields:
+dir=[-2.151917, -52.111313, -0.002159]
+fov=[48.698147, 51.411037, 47.773930, 49.682686]
+screen=0.805240
+optimalRes=[3199, 5120]
+optimalRect=[0, 0, 3199, 5120]
+handedness=left
+borderFitError=[233px, 71px, 137px, 71px]
+
+15:33:12 INFO: Output buffer found. Viewport is 878x676.
+
+15:33:12 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:33:13 SUCCESS: DX11-Warper initialized.
+
+15:33:13 Successfully created warper #2
+
+15:33:13 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:33:13 Input texture resource attached.
+15:33:21 INFO: DX11-Warper destroyed.
+
+15:33:21 Warper 574580800 destroyed.
+15:33:21 INFO: DX11-Warper destroyed.
+
+15:33:21 Warper 3 destroyed.
+15:33:21 INFO: DX11-Warper destroyed.
+
+15:33:21 Warper 574580800 destroyed.
+15:33:21 Unloading VIOSOWarpBlend
+
+
+ Loading VIOSOWarpBlend ...
+Process location: D:\Unity\2020.1.0b4\Editor\Unity.exe
+Plugin location: D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSO_Plugin64.dll
+Try VIOSOWarpBlend location: D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll
+15:40:22 --- BEGIN SESSION --- BEGIN SESSION --- BEGIN SESSION --- BEGIN SESSION ---
+
+15:40:22 Creating Warper "right"
+15:40:22 
+Ini path:
+15:40:22  D3D11 - Device found.
+
+15:40:22 Warper "right" got ID #1
+15:40:22 Creating Warper "left"
+15:40:22 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:40:22 
+Ini path:
+15:40:22 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:40:22  D3D11 - Device found.
+
+15:40:22 DX11-Warper "center" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=1
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:40:22 Warper "left" got ID #2
+15:40:22 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:40:22 File found and openend.
+
+15:40:22 File contains 6 chunks.
+
+15:40:22 Load warp map 0...
+
+15:40:22 Warp map successfully added, new dataset (1) 1600x2560 created, data loading skipped.
+
+15:40:22 Load bitmap for dataset 1...
+
+15:40:22 Load warp map 1...
+
+15:40:22 Warp map successfully loaded, new dataset (2) 1600x2560 created.
+
+15:40:22 Load bitmap for dataset 2...
+
+15:40:22 Blend image set.
+
+15:40:22 Load warp map 2...
+
+15:40:22 Warp map successfully added, new dataset (3) 1600x2560 created, data loading skipped.
+
+15:40:22 Load bitmap for dataset 3...
+
+15:40:22 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:40:22 Mapping Info:
+    Hostname: ""
+  Devicename: "D6 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 3520,0
+
+15:40:23 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:40:23 left-handedness detected.
+
+15:40:23 INFO: AutoView mapping display corners:
+ tl(-699.3588,883.7701,-742.9283)
+ tr(645.9905,884.3150,-789.1859)
+ bl(-778.8524,-885.1764,-657.4368)
+ br(784.5569,-883.5085,-652.7791).
+
+15:40:23 INFO: AutoView average resolution is 2076x2227.
+15:40:23 INFO: AutoView optimal resolution coverage is 68%x68%.
+15:40:23 INFO: AutoView for channel [center] yields:
+dir=[-3.603276, -0.816620, 0.043669]
+fov=[53.741737, 55.363392, 54.169922, 53.684025]
+screen=0.709285
+optimalRes=[3200, 5120]
+optimalRect=[0, 0, 3200, 5120]
+handedness=left
+borderFitError=[171px, 101px, 142px, 136px]
+
+15:40:23 INFO: Output buffer found. Viewport is 878x676.
+
+15:40:23 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:40:23 SUCCESS: DX11-Warper initialized.
+
+15:40:23 Successfully created warper #0
+
+15:40:23 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:40:23 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:40:23 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:40:23 DX11-Warper "right" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=2
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:40:23 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:40:23 File found and openend.
+
+15:40:23 File contains 6 chunks.
+
+15:40:23 Load warp map 0...
+
+15:40:23 Warp map successfully added, new dataset (1) 1600x2560 created, data loading skipped.
+
+15:40:23 Load bitmap for dataset 1...
+
+15:40:23 Load warp map 1...
+
+15:40:23 Warp map successfully added, new dataset (2) 1600x2560 created, data loading skipped.
+
+15:40:23 Load bitmap for dataset 2...
+
+15:40:23 Load warp map 2...
+
+15:40:23 Warp map successfully loaded, new dataset (3) 1600x2560 created.
+
+15:40:23 Load bitmap for dataset 3...
+
+15:40:23 Blend image set.
+
+15:40:23 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:40:23 Mapping Info:
+    Hostname: ""
+  Devicename: "D7 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 5120,0
+
+15:40:23 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:40:23 left-handedness detected.
+
+15:40:23 INFO: AutoView mapping display corners:
+ tl(325.7965,884.8607,-965.9467)
+ tr(1020.4581,883.7508,-1.1815)
+ bl(165.6831,-884.8851,-1005.8342)
+ br(1021.6858,-882.2506,-2.9690).
+
+15:40:23 INFO: AutoView average resolution is 1859x2226.
+15:40:23 INFO: AutoView optimal resolution coverage is 71%x71%.
+15:40:23 INFO: AutoView for channel [right] yields:
+dir=[-1.603805, 51.759789, 0.034882]
+fov=[47.390091, 50.621052, 49.294228, 49.711651]
+screen=0.802922
+optimalRes=[3199, 5120]
+optimalRect=[0, 0, 3199, 5120]
+handedness=left
+borderFitError=[143px, 56px, 248px, 73px]
+
+15:40:23 INFO: Output buffer found. Viewport is 878x676.
+
+15:40:23 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:40:23 SUCCESS: DX11-Warper initialized.
+
+15:40:23 Successfully created warper #1
+
+15:40:23 2024/06/10 VIOSOWarpBlend API 1.6.29.100.
+
+15:40:23 lib-path D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend64.dll.
+
+15:40:23 process path D:\Unity\2020.1.0b4\Editor\Unity.exe.
+
+15:40:23 DX11-Warper "left" created. Logging level is 2
+Evaluated parameters from
+D:\Projects (Unity)\VIOSO-Unity-Sandbox\Assets\Plugins\vioso\VIOSOWarpBlend.ini:
+calibFile=D:\Calibration\Panadome3D.vwf
+calibIndex=0
+calibSplit=[0,0,0,0]
+bTurnWithView=0
+bDoNotBlend=0
+eyePointProvider=
+eyePointProviderParam=
+eye=[0.00000, 0.00000, 0.00000]
+near=0.12500
+far=20000.00000
+bBicubic=0
+bUseGL110=0
+bPartialInput=0
+splice=0
+trans=[1000.00000, 0.00000, 0.00000, 0.00000; 0.00000, 1000.00000, 0.00000, 0.00000; 0.00000, 0.00000, -1000.00000, 0.00000; 0.00000, 0.00000, 0.00000, 1.00000]
+autoViewC=5.00000
+bAutoView=1
+dir=[0.00000, 0.00000, 0.00000]
+fov=[35.00000, 30.00000, 35.00000, 30.00000]
+screen=1.00000
+optimalRes=[0, 0]
+optimalRect=[0, 0, 0, 0]
+port=0
+heartbeatPort=0
+address=0.0.0.0
+mouseMode=0
+bDoNoBlack=0
+overrideStatemask=0
+bFixWraparound=0
+D3D12RTVF=28
+blackScale=1.000000
+
+
+15:40:23 Open "D:\Calibration\Panadome3D.vwf"...
+
+15:40:23 File found and openend.
+
+15:40:23 File contains 6 chunks.
+
+15:40:23 Load warp map 0...
+
+15:40:23 Warp map successfully loaded, new dataset (1) 1600x2560 created.
+
+15:40:23 Load bitmap for dataset 1...
+
+15:40:23 Blend image set.
+
+15:40:23 Load warp map 1...
+
+15:40:23 Warp map successfully added, new dataset (2) 1600x2560 created, data loading skipped.
+
+15:40:23 Load bitmap for dataset 2...
+
+15:40:23 Load warp map 2...
+
+15:40:23 Warp map successfully added, new dataset (3) 1600x2560 created, data loading skipped.
+
+15:40:23 Load bitmap for dataset 3...
+
+15:40:24 LoadVWF: Successfully added 3 datasets to the mappings set.
+
+15:40:24 Mapping Info:
+    Hostname: ""
+  Devicename: "D5 WQ Projector (PNP0000)"
+   SplitInfo: (0,0) of (0,0)
+  Resolution: 1600x2560
+    Position: 1920,0
+
+15:40:24 3D data found in mapping. Using DYNAMIC EYE settings.
+
+15:40:24 left-handedness detected.
+
+15:40:24 INFO: AutoView mapping display corners:
+ tl(-1019.5349,884.8517,-1.1517)
+ tr(-365.5870,885.0822,-951.3798)
+ bl(-1019.4171,-884.9565,-2.8556)
+ br(-152.0290,-885.2803,-1007.6599).
+
+15:40:24 INFO: AutoView average resolution is 1874x2299.
+15:40:24 INFO: AutoView optimal resolution coverage is 73%x73%.
+15:40:24 INFO: AutoView for channel [left] yields:
+dir=[-2.151917, -52.111313, -0.002159]
+fov=[48.698147, 51.411037, 47.773930, 49.682686]
+screen=0.805240
+optimalRes=[3199, 5120]
+optimalRect=[0, 0, 3199, 5120]
+handedness=left
+borderFitError=[233px, 71px, 137px, 71px]
+
+15:40:24 INFO: Output buffer found. Viewport is 878x676.
+
+15:40:24 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:40:24 SUCCESS: DX11-Warper initialized.
+
+15:40:24 Successfully created warper #2
+
+15:40:24 WARNING: Render target size does not match mapping size. This will produce sampling artefacts.
+15:40:24 Input texture resource attached.
+15:40:27 Input texture resource attached.
+15:40:32 Input texture resource attached.
+15:40:37 INFO: DX11-Warper destroyed.
+
+15:40:37 Warper 574580032 destroyed.
+15:40:37 INFO: DX11-Warper destroyed.
+
+15:40:37 Warper 574580032 destroyed.
+15:40:37 INFO: DX11-Warper destroyed.
+
+15:40:37 Warper 574580032 destroyed.
+15:40:37 Unloading VIOSOWarpBlend
+
+VIOSO Unity Plugin OnUnityGfxDeviceEventShutdown
+VIOSO Unity Plugin OnUnityGfxDeviceEventShutdown
+VIOSO Unity Plugin to unload

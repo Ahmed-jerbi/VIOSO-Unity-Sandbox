@@ -7,15 +7,14 @@ using UnityEditor;
 
 public class Manager : MonoBehaviour
 {
-    private bool partbool=false;
-    public GameObject Part1, Part2;
+    private bool bShowParticles=false;
+    public GameObject particleObj;
 
     
     void Start()
     {
-
-        // Activate additional Displays
-        for (int i = 2; i < Display.displays.Length; i++)
+        // Activate multi displays
+        for (int i = 0; i < Display.displays.Length; i++)
         {
             Display.displays[i].Activate(); // Optionally you can add (Width, Height, Frame_rate);
         }
@@ -26,34 +25,27 @@ public class Manager : MonoBehaviour
 
 
 
-
    
     void Update()
     {
-        //Rotate Sky
-        RenderSettings.skybox.SetFloat("_Rotation", Time.time * 1.2f);
 
-        //Particle System Control 
+        //Particle System ON/OFF 
         if (Input.GetKeyDown("p"))
 
-        {   partbool = !partbool;
+        {   
+            bShowParticles = !bShowParticles;
 
-            if (partbool)
-            {   Part1.SetActive(true);
-                Part2.SetActive(true);
-            }
-            else
-            {
-                Part1.SetActive(false);
-                Part2.SetActive(false);
-            }
+            if (bShowParticles) 
+                particleObj.SetActive(true);
+               
+            else particleObj.SetActive(false);
+
         }
 
-        //exit on escape
+        //Exit on "Escape" button
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
-            Debug.Log("Exit");
         }
     }
 
